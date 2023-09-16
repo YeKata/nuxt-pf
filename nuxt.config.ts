@@ -12,5 +12,8 @@ export default defineNuxtConfig({
         href: 'https://fonts.googleapis.com/css2?family=Rowdies:wght@300&family=Ubuntu&display=swap'
       }]
     }
+  },
+  devServer: {
+    port: process.env.NODE_ENV === 'production' ? undefined : 5000
   }
 })
