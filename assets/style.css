@@ -1,0 +1,421 @@
+/*app.vue*/
+body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding: 0;
+  }
+  /*공용*/
+.li-style {
+    list-style: none;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.base{
+    padding:4.0rem 0;
+}
+
+.swiper-pagination {
+    --swiper-theme-color: #cecee9;
+
+}
+
+@media(min-width:1024px) {
+    .header-box {
+        width:90vw;
+        height:3rem;
+        display:flex;
+        justify-content: space-between;
+        font-size: 2rem;
+    }
+    .about {
+        padding: 2rem;
+        padding-top: 15rem;
+        font-size: 2rem; 
+        width:1024px;
+        height: 230px;
+        color:white;
+        text-shadow: 0 0 2px rgb(32, 18, 226);
+    }
+    .nav {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .nav-div{
+        width:23%;
+        text-align: center;
+    }
+    .progressbar{
+        background-color: #eee;
+        border-radius: 5px;
+        box-shadow: 1px 1px 6px 1px rgba(255, 255, 255, 0.3);
+        display: flex;
+        flex-direction: column;
+        height: 32px;
+        justify-content: center;
+        padding: 0 1px;
+        width: 768px;
+    }
+    .content-box {
+        width:88%;
+        margin:auto;
+    }
+    .contact-header > span {
+        font-size: 8rem;
+        margin-left: 2rem;
+    }
+
+    .contact-img > img{
+        width:40vw;
+        height:80vh
+    }
+
+    .ul-column> li {
+        list-style: none;
+        line-height: 2rem;
+        font-size: 1.5rem;
+    }
+
+}
+
+@media(max-width:1023px) {
+    .home {
+        display: none;
+    }
+    .header-box{
+        width:90vw;
+        height: 2rem;
+        font-size: 1rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    .about {
+        padding-top: 15rem;
+        font-size: 1.5rem; 
+        width:1024px;
+        height: 230px;
+        color:white;
+        text-shadow: 0 0 2px rgb(32, 18, 226);
+    }
+    .nav {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .nav-div{
+        width:23%;
+        text-align: center;
+    }
+    .progressbar{
+        background-color: #eee;
+        border-radius: 5px;
+        box-shadow: 1px 1px 6px 1px rgba(255, 255, 255, 0.3);
+        display: flex;
+        flex-direction: column;
+        height: 32px;
+        justify-content: center;
+        padding: 0 1px;
+        width: 600px;
+    }
+    .contact-header > span {
+        font-size: 5rem;
+        margin-left: 2rem;
+    }
+
+    .contact-img > img{
+        width:40vw;
+        height:70vh
+    }
+
+    .ul-column> li {
+        list-style: none;
+        line-height: 2rem;
+        font-size: 1.5rem;
+    }
+    
+}
+@media(max-width:649px){
+    .about {
+        padding-top: 15rem;
+        font-size: 1rem; 
+        width:1024px;
+        height: 230px;
+        color:white;
+        text-shadow: 0 0 2px rgb(32, 18, 226);
+    }
+    .nav-div{
+        width:25%;
+        text-align: left;
+    }
+    .nav {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .progressbar{
+        background-color: #eee;
+        border-radius: 5px;
+        box-shadow: 1px 1px 6px 1px rgba(255, 255, 255, 0.3);
+        display: flex;
+        flex-direction: column;
+        height: 32px;
+        justify-content: center;
+        padding: 0 1px;
+        width: 384px;
+    }
+    .contact-header > span {
+        font-size: 3rem;
+        margin-left: 2rem;
+    }
+
+    .contact-img > img{
+        width:40vw;
+        height:60vh
+    }
+
+    .ul-column> li {
+        list-style: none;
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+    
+}
+
+.fix {
+    position: fixed;
+    z-index: 99;
+    width:100%;
+    color:white;
+    font-family: 'Rowdies', cursive;
+    padding-top: 0.5rem;
+    box-shadow: 1px 0 8px 1px rgba(0,0,0,.25);
+}
+
+
+
+.block{
+    animation: block 2s linear forwards;
+    display: block;
+    opacity: 0;
+}
+
+@keyframes block {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.none{
+    display: none;
+}
+
+  /*BasicPage.vue*/
+
+.basic {
+    background:no-repeat center url("cat.jpg");
+    background-size: cover;
+    color:white;
+}
+
+.home{
+    width:30%;
+    height: 100%;
+    text-align: center;
+}
+
+.nav-bar{
+    width:60%;
+    height:100%;
+}
+   
+.nav-div:hover{
+    cursor: default;
+}
+
+
+.title{
+    font-size:1.6rem
+}
+
+.main {
+    width:85%;
+    margin-left: 5vw;
+}
+
+
+.text {
+    font-size: 5rem;
+    font-weight:bold;
+}
+
+.text > span {
+    cursor: default;
+}
+
+.fade-enter-from {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    transition: opacity 1s ease;
+}
+
+.slide-fade1-enter-from {
+    transform: translateX(-350px);
+}
+
+.slide-fade1-enter-active {
+    transition-delay: 1s;
+    transition: all 1s ease-out;
+}
+
+.slide-fade2-enter-from {
+    transform: translateY(100vh);
+}
+
+.slide-fade2-enter-active {
+
+    transition: all 1s ease-out;
+}
+
+
+
+.footer {
+    width:85%;
+    margin-top: 5vh;
+    margin-left: 15rem;
+    padding:4.5rem;
+}
+
+/*StackPage.vue*/
+
+.stack {
+    background-color:rgb(44, 49, 49);
+    color:white;
+}
+.stick >li{
+    padding-top:4.5rem;
+    font-size:1.5rem;
+}
+
+.content-header{
+    margin: 0 auto;
+    width:85%;
+    font-size: 3rem;
+}
+
+.progress{
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.bar1 {
+    width:70%;
+}
+
+.bar2{
+    width:60%;
+}
+
+.bar3{
+    width:20%;
+}
+
+.bar4{
+    width:40%;
+}
+
+.li-box{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.percent {
+    align-items: center;
+    -webkit-animation: progress 4s linear;
+    animation: progress 4s linear forwards;
+    background: linear-gradient(90deg,#8f91f7,#3033ee);
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    height: 30px;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+@keyframes progress {
+    0%{width:0%;}
+    100%{ width:100%; }
+}
+
+.percent-text {
+    color:white;
+    font-size:1rem;
+}
+  
+
+/*PortPage.vue*/
+.port {
+    background-color: rgb(146, 161, 245);
+    color:white;
+}
+
+.pf-wrap {
+    width:100%;
+    height: 100%;
+}
+
+  
+
+/*ContactPage.vue*/
+.contact {
+    background-color:rgb(171, 173, 241);
+    color:black;
+}
+
+.contact-box {
+    width:90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-content {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}   
+
+
+
+.contact-list {
+    height: 50vh;
+}
+
+
+.ul-column {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.li-name {
+    border-bottom: 1px solid black;
+}
+

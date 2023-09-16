@@ -1,0 +1,30 @@
+[{
+    "name": "Home",
+    "state": true,
+    "kname": "홈",
+    "link": "#basic",
+    "number": 0
+},
+{
+    "name": "Skil",
+    "state": true,
+    "kname": "기술",
+    "link": "#stack",
+    "number": 1
+
+},
+{
+    "name": "Project",
+    "state": true,
+    "kname": "프로젝트",
+    "link": "#port",
+    "number": 2
+},
+{
+    "name": "Contact",
+    "state": true,
+    "kname": "연락",
+    "link": "#contact",
+    "number": 3
+}
+]
