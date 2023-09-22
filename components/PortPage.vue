@@ -12,7 +12,7 @@
           clickable: true,
         }"
         :modules="[SwiperPagination,SwiperAutoplay]"
-        class="mySwiper"
+        class="portSwiper"
       >
         <swiper-slide v-for="slide in link" :key="slide" @click="movePage(slide)" />
       </swiper>
@@ -23,10 +23,8 @@
 <script setup lang="ts">
 import link from '~/assets/link.json'
 
-const router = useRouter()
-
 const movePage = (slide:string) => {
-  router.push(slide)
+  window.location.href = 'https://yekata.github.io/' + slide
 }
 </script>
 
@@ -35,27 +33,79 @@ const movePage = (slide:string) => {
     height: 90%;
   }
 
-  .swiper-slide:nth-child(1) {
+  @media(min-width: 1024px){
+    .swiper-slide:nth-child(1) {
+    height: 90%;
+    background: url('~/assets/todo.png') no-repeat center ;
+    background-size: 600px 1000px ;
+  }
+  .swiper-slide:nth-child(2) {
+    height: 90%;
+    background: url('~/assets/v-news.png') no-repeat center ;
+    background-size: 600px 1000px ;
+
+  }
+  .swiper-slide:nth-child(3) {
+    height: 90%;
+    background: url('~/assets/v-star.png') no-repeat center ;
+    background-size: 600px 1000px ;
+  }
+  .swiper-slide:nth-child(4) {
+    height: 90%;
+    background: url('~/assets/nuxt-mongo.png') no-repeat center ;
+    background-size: 600px 1000px ;
+
+  }
+}
+
+  @media(max-width:1023px) {
+    .swiper-slide:nth-child(1) {
+    height: 90%;
+    background: url('~/assets/todo.png') no-repeat center ;
+    background-size: 400px 800px ;
+  }
+  .swiper-slide:nth-child(2) {
+    height: 90%;
+    background: url('~/assets/v-news.png') no-repeat center ;
+    background-size: 400px 800px ;
+
+  }
+  .swiper-slide:nth-child(3) {
+    height: 90%;
+    background: url('~/assets/v-star.png') no-repeat center ;
+    background-size: 400px 800px ;
+  }
+  .swiper-slide:nth-child(4) {
+    height: 90%;
+    background: url('~/assets/nuxt-mongo.png') no-repeat center ;
+    background-size: 400px 800px ;
+
+  }
+  }
+
+  @media(max-width:649px){
+    .swiper-slide:nth-child(1) {
     height: 90%;
     background: url('~/assets/todo.png') no-repeat center;
-    background-size: 600px 1000px;
+    background-size: 280px 700px ;
   }
   .swiper-slide:nth-child(2) {
     height: 90%;
     background: url('~/assets/v-news.png') no-repeat center;
-    background-size: 600px 1000px;
+    background-size: 280px 700px ;
 
   }
   .swiper-slide:nth-child(3) {
     height: 90%;
     background: url('~/assets/v-star.png') no-repeat center;
-    background-size: 600px 1000px;
+    background-size: 280px 700px ;
   }
   .swiper-slide:nth-child(4) {
     height: 90%;
     background: url('~/assets/nuxt-mongo.png') no-repeat center;
-    background-size: 600px 1000px;
+    background-size: 280px 700px ;
 
+  }
   }
 
   .swiper-slide {
